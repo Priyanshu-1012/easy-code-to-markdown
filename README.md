@@ -14,6 +14,7 @@ _(don't use space after # or ## or ###)._
 ### usage 
 ``` ❯ awk -f s2mkd.awk bash_script.sh > markdown_file.md ```
 
+## Example
 ```bash
 #!/bin/bash
 ##This is a simple Bash script example
