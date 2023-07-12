@@ -9,6 +9,11 @@ Comments are converted to markdown text, the code is convereted to mrkdwn code s
 | starts with ### | italic |
 | inline comment | ignored |
 
+_(don't use space after # or ## or ###)._
+
+### usage 
+``` ❯ awk -f s2mkd.awk bash_script.sh > markdown_file.md ```
+
 ```bash
 #!/bin/bash
 ##This is a simple Bash script example
@@ -23,7 +28,7 @@ read AGE
 
 ###Check if the user is old enough
 if [ "$AGE" -ge 18 ]; then
-    echo "You are old enough to vote."
+    echo "You are old enough to vote." #inline comment ignored
 else
     echo "You are not old enough to vote."
 fi
@@ -60,9 +65,16 @@ read AGE
 ```bash
 
 if [ "$AGE" -ge 18 ]; then
-    echo "You are old enough to vote."
+    echo "You are old enough to vote." #inline comment ignored
 else
     echo "You are not old enough to vote."
 fi
 
+```
+
+
+## Installation
+
+```shell
+curl -o ~/s2mkd.awk https://raw.githubusercontent.com/Priyanshu-1012/easy-script-to-markdown/master/s2mkd.awk
 ```
