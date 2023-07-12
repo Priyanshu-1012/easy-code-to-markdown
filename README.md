@@ -1,5 +1,5 @@
 # easy-script-to-markdown
-awk script to convert your script into markdown. Comments are converted to text and code to code snippet in markdown. Save some precious time writing a README explaining the code.
+awk script to convert your script(python,perl,shell,awk...all languages that use # for comments) into markdown. Comments are converted to text and code to code snippet in markdown. Save some precious time writing a README explaining the code.
 
 Comments are converted to markdown text, the code is convereted to mrkdwn code snippets.
 | comment type | conversion(whole line)|
